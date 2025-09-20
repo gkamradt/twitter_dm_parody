@@ -399,6 +399,11 @@ export default function HomeClient({ initialMessage }: { initialMessage?: string
           >
             {copied ? "Copied!" : "Copy link to message"}
           </button>
+          <p className={`mt-2 text-xs ${
+            isDarkMode ? 'text-[#71767B]' : 'text-gray-500'
+          }`}>
+            Warning, this is a parody. Use responsibly and only for jokes.
+          </p>
         </div>
 
         <section className={`w-full max-w-[600px] space-y-6 rounded-3xl border p-6 backdrop-blur ${
